@@ -2,11 +2,13 @@
 
 ## Overview
 This directory is for Go lang training.
+
 I will tarin **grammar** and **construction** of Go lang in this directory.
+
 Actually, I'm going to store anything about Go lang.
 
 ## Commands
-```
+```sh
 # confirm whether there is a file named "docker-compose.yml" in this directory.
 
 # launch a container with docker-compose
