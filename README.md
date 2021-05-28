@@ -8,7 +8,7 @@ I will tarin **grammar** and **construction** of Go lang in this directory.
 Actually, I'm going to store anything about Go lang.
 
 ## Commands
-```sh
+```fish
 # confirm whether there is a file named "docker-compose.yml" in this directory.
 
 # launch a container with docker-compose
@@ -21,6 +21,16 @@ docker-compose exec app go run ./basic/helloworld.go
 
 # stop the container
 docker-compose down
+```
+
+**or**
+
+```fish
+./run.fish
+# -> Enter the Path of code you wanna run.
+# -> path: basic/helloworld.go
+
+# -> Hello World
 ```
 
 ### Work hard, play hard!!!!!
