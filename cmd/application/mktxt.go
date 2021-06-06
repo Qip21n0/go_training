@@ -20,8 +20,9 @@ func main() {
 
 	var txt string
 	rand.Seed(time.Now().UnixNano())
-	for i := 0; i < 100; i++ {
-		txt = strconv.Itoa(rand.Intn(100)) + "\n"
+	n := 1000000
+	for i := 0; i < n; i++ {
+		txt = strconv.Itoa(rand.Intn(n)) + "\n"
 		file.Write(([]byte)(txt))
 	}
 	file.Close()

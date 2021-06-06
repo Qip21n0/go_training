@@ -12,9 +12,9 @@ func main() {
 	for _, c := range "ABC" {
 		ch := c
 		fmt.Printf("%c start\n", c)
+		wg.Add(1)
 		go func() {
-			wg.Add(3)
-			for i:= 0; i < 10; i++ {
+			for i := 0; i < 10; i++ {
 				time.Sleep(10 * time.Millisecond)
 				fmt.Printf("%c", ch)
 			}
