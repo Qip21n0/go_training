@@ -54,8 +54,9 @@ func main() {
 		_ = fmt.Errorf("%sを開けません", ofname)
 	}
 
-	for _, s := range str {
+	for i, s := range str {
 		hash := sha256.Sum256([]byte(s))
 		fmt.Fprintf(ofile, "%x\n", hash[:])
+		fmt.Printf("%d %s\n", i, s)
 	}
 }
